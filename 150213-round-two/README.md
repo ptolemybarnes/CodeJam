@@ -1,11 +1,27 @@
-## Lazer Kata
+## Round 2: Lazer Kata!
 
-Write a method that returns the string it is called upon with a hole blasted in it.
+Write a method #lazer that can blast a hole in the *middle* a string.
+
+E.g.,
+
+"codejam".lazer(3) #=> "co___am"
+
+As you can see, #lazer takes a number which tells it how big to make the hole.
+
+"makers academy".lazer(5) #=> "make_____ademy"
+
+### BONUS!
+
+Add a "stun mode" to the lazer. Stun mode should scramble a range of letters in the middle of the word.
 
 For example:
-  $ "makersacademy".lazer(3) #=> "maker___ademy"
 
-As you can see, #lazer takes an argument giving the blast radius. The default blast radius is one, such that:
-  $ "tiger".lazer #=> "ti er"
+"codejam".lazer(3, :stun) #=> "cojdeam"
 
-Go forth and arm the lazer!!!k
+"makers academy".lazer(5, :stun) #=> "makes acrademy"
+
+
+
+Go forth and arm the lazer!!!
+
+
